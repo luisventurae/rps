@@ -1,26 +1,16 @@
 <template>
   <view class="container">
-    <StatusBar :bg_color="bg_color" />
-    <Header :title="title" />
-    <!-- <Home /> -->
+    <Home />
   </view>
 </template>
 
 <script>
-import StatusBar from './app/components/StatusBar'
-import Header from './app/components/Header'
-import Home from './app/components/Home'
+import Home from './app/views/Home'
 
 export default {
   components: {
-    StatusBar,
-    Header,
     Home,
   },
-  data: () => ({
-    bg_color: '#f39c12',
-    title: 'RPS',
-  }),
 }
 </script>
 
